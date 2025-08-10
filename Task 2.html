@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the layout of my web deveolopmetn journy.I hope you will be happy and attractive to check my skills .">
+    <title>Responsic Layout</title>
+    <style>
+        .container-box{
+            height: 90vh;
+            width: 90vw;
+            background-color: rgba(128, 128, 128, 0.667);
+            display: flex;
+            padding-top: 70px;
+            border-radius: 35px;
+            
+            justify-content: center;
+        }
+        *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+
+        }
+        .clickable-image{
+            width: 100%;
+            height: 190px;
+align-self: center;
+box-shadow: 0 6px 16px rgb(71, 37, 102);
+transition: transform 0.3 ease;
+cursor:pointer;
+margin-bottom: 20px;
+border-radius: 15px;
+
+        }
+        .clickable-image:hover{
+            transform: scale(1.03);
+        }
+body{
+    background-color:burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-form{
+background-color: rgba(93, 46, 46, 0.834);
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgb(199, 180, 180);
+}
+.login-form h2{
+    margin-bottom: 20px;
+}
+.login-form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border: 1px solid #6f6161cc;
+    font-size: 14px;
+}
+.login-form input:focus{
+    border-color: aqua;
+    outline: none;
+}
+.login-form button{
+    width: 100px;
+    padding: 10px;
+      background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 600px) {
+  body{
+    background-color:burlywood;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container-box">
+    <div class="container">
+ <a href="https://www.nationalgeographic.com/environment" target="_blank">
+        <img src="https://t3.ftcdn.net/jpg/03/05/95/10/240_F_305951021_c4GxYftu8uFAyBMTMqK6ljnOL9GcXdc0.jpg" alt="Forest Link" class="clickable-image" >
+        </a>
+        <div class="login-form">
+            <h2>Login</h2>
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button> Login in</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
